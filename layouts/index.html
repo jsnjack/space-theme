@@ -1,0 +1,9 @@
+{{ define "content" }}
+    {{ $paginator := .Paginate ( where .Pages "Section" "posts" ) }}
+    {{ range $paginator.Pages }}
+        {{ partial "post.html" . }}
+    {{ end }}
+    <div class="section centered">
+        {{ partial "pagination.html" . }}
+    </div>
+{{ end }}

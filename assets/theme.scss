@@ -1,0 +1,46 @@
+body {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.sidebar {
+    padding-right: 2em;
+}
+
+.content {
+    padding-left: 2em;
+}
+
+.post {
+    h2 {
+        margin-bottom: 3px;
+    }
+    .in-post-summary {
+        font-size: 80%;
+    }
+    .in-post-tag {
+        background: $primary-color;
+        color: $light-color;
+        padding: 3px 6px 3px 6px;
+        margin-left: 3px;
+    }
+    pre {
+        overflow-x: auto;
+    }
+    code {
+        font-size: 85%;
+    }
+    margin-bottom: 3em;
+
+}
+
+.list-header {
+    text-align: center;
+}
+
+@media (max-width: $size-sm) {
+    .content {
+        padding-left: 0.2em;
+        padding-right: 0.2em;
+    }
+}

@@ -1,0 +1,16 @@
+{{ partial "head.html" . }}
+
+<div class="content">
+    <div class="container grid-lg">
+        <div class="columns">
+            <div class="column col-3 hide-sm text-left sidebar">
+                {{ partial "sidebar.html" . }}
+            </div>
+            <div class="column col-9 col-sm-12 text-left content">
+                {{ block "content" . }}
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</div>
+{{ partial "footer.html" . }}
