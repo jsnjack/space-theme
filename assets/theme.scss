@@ -5,6 +5,9 @@ body {
 
 .sidebar {
     padding-right: 2em;
+    h1 a {
+        text-decoration: none;
+    }
 }
 
 .content {
